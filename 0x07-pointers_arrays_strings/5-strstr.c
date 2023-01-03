@@ -30,7 +30,7 @@ char *_strstr(char *haystack, char *needle)
 
 				else
 				break;
-			} /* if matched throughout, return haystack */
+			}
 
 			if (needle[j] == '\0')
 			{
@@ -41,5 +41,5 @@ char *_strstr(char *haystack, char *needle)
 		i++;
 	}
 
-	return (NULL); /* No match */
+	return (NULL); 
 }
