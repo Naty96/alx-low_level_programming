@@ -4,7 +4,7 @@
 /**
 * _strchr - locate 1st occurrence of char in string and returns pointer there
 * @s: string to search
-* @c: target characer
+* @ target characer
 * Return: pointer to that character in string
 */
 
