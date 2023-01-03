@@ -1,10 +1,10 @@
 #include "main.h"
 #define NULL 0
 
-/*s
+/**
 * _strchr - locate 1st occurrence of char in string and returns pointer there
 * @s: string to search
-* @c: target characer
+* @c: target charace
 * Return: pointer to that character in string
 */
 
