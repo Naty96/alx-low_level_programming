@@ -2,10 +2,10 @@
 #include "main.h"
 
 /**
- * _strlen - Function for counting the length of string
- * @s: a pointer for counting the strting length
- * Return: int i
- */
+* _strlen - a function to print the length of a string
+* @s: string to be supplied
+* Return: Always 0 (Success)
+*/
 
 int _strlen(char *s)
 {

@@ -1,14 +1,15 @@
 #include "main.h"
+
 /**
- * _strncpy - copies a string
+ * _strncpy - Function that copies a string
  * @dest: Pointer to a character that will be changed
  * @src: Pointer to a character that will be changed
  * @n: value
+ *
  * Return: dest
  */
 
 char *_strncpy(char *dest, char *src, int n)
-
 {
 	int i;
 
