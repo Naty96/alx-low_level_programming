@@ -1,37 +1,18 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
 /**
- * create_array - creates an array of chars dynamically
- * @size: size of the array
- * @c: the string
- * Return: 0 means success except defined otherwise
+ * malloc_checked - A function that allocates memory using malloc.
+ * @b: integer variable dat holds the memory size
+ * Return: 0 means program was successful
  */
-char *create_array(unsigned int size, char c)
+void *malloc_checked(unsigned int b)
 {
-	char *buffer;
-	unsigned int position;
+	void *ptr;
 
-	if (size == 0)
-	{
-		return (NULL);
-	}
+	ptr = malloc(b);
+	if (ptr == NULL)
+		exit(98);
 
-	/*Define values with malloc*/
-	buffer = (char *) malloc(size * sizeof(c));
-
-	if (buffer == 0)
-	{
-		return (NULL);
-	}
-	else
-	{
-		position = 0;
-		while (position < size) /*While for array*/
-		{
-			*(buffer + position) = c;
-			position++;
-		}
-
-		return (buffer);
-	}
+	return (ptr);
 }
